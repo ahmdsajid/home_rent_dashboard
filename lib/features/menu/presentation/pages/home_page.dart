@@ -31,17 +31,17 @@ class HomePage extends StatelessWidget {
             const SizedBox(height: 16),
 
             // Tabs
-            Row(
+            const Row(
               children: [
                 ChoiceChip(label: Text("House"), selected: true),
-                const SizedBox(width: 8),
+                SizedBox(width: 8),
                 ChoiceChip(label: Text("Apartment"), selected: false),
               ],
             ),
             const SizedBox(height: 16),
 
             // Near from you
-            Text("Near from you",
+            const Text("Near from you",
                 style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
             const SizedBox(height: 8),
             Container(
@@ -58,7 +58,7 @@ class HomePage extends StatelessWidget {
             const SizedBox(height: 16),
 
             // Best for you
-            Text("Best for you",
+            const Text("Best for you",
                 style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
             const SizedBox(height: 8),
             ListTile(
@@ -67,8 +67,8 @@ class HomePage extends StatelessWidget {
                 width: 60,
                 fit: BoxFit.cover,
               ),
-              title: Text("Orchard House"),
-              subtitle: Text("Rp. 2,500 / month • 6 Bed • 3 Bath"),
+              title: const Text("Orchard House"),
+              subtitle: const Text("Rp. 2,500 / month • 6 Bed • 3 Bath"),
             ),
             ListTile(
               leading: Image.network(
@@ -76,8 +76,8 @@ class HomePage extends StatelessWidget {
                 width: 60,
                 fit: BoxFit.cover,
               ),
-              title: Text("The Hollies House"),
-              subtitle: Text("Rp. 2,000 / month • 5 Bed • 2 Bath"),
+              title: const Text("The Hollies House"),
+              subtitle: const Text("Rp. 2,000 / month • 5 Bed • 2 Bath"),
             ),
           ],
         ),

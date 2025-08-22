@@ -1,9 +1,11 @@
 import 'package:get/get.dart';
 
-class MenuController extends GetxController {
+class MenuControllerX extends GetxController {
+  // reactive integer to hold the selected index
   var selectedIndex = 0.obs;
 
-  void selectMenu(int index) {
+  // method to update selected index
+  void changePage(int index) {
     selectedIndex.value = index;
   }
 }
